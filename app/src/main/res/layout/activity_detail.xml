@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:id="@+id/detail_img_item_photo"
+                android:layout_width="150dp"
+                android:layout_height="220dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="8dp"
+                android:contentDescription="@string/detail_img_item_photo_content_desc"
+                android:scaleType="centerCrop"
+                tools:background="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/detail_tv_movie_title"
+                style="@style/Text.Field.Large"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@+id/detail_img_item_photo"
+                android:textSize="18sp"
+                tools:text="Movie Title" />
+
+            <TextView
+                android:id="@+id/detail_tv_movie_year"
+                style="@style/Text.Content"
+                android:layout_below="@+id/detail_tv_movie_title"
+                android:layout_toEndOf="@id/detail_img_item_photo"
+                tools:text="Movie Release Year" />
+
+            <TextView
+                android:id="@+id/detail_tv_release_label"
+                style="@style/Text.Field.Small"
+                android:layout_below="@id/detail_tv_movie_year"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@+id/detail_img_item_photo"
+                android:text="@string/release_label" />
+
+            <TextView
+                android:id="@+id/detail_tv_release_content"
+                style="@style/Text.Content"
+                android:layout_below="@id/detail_tv_release_label"
+                android:layout_toEndOf="@id/detail_img_item_photo"
+                tools:text="Release Date" />
+
+            <TextView
+                android:id="@+id/detail_tv_language_label"
+                style="@style/Text.Field.Small"
+                android:layout_below="@id/detail_tv_release_content"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@+id/detail_img_item_photo"
+                android:text="@string/language_label" />
+
+            <TextView
+                android:id="@+id/detail_tv_language_content"
+                style="@style/Text.Content"
+                android:layout_below="@id/detail_tv_language_label"
+                android:layout_toEndOf="@id/detail_img_item_photo"
+                tools:text="Movie Original Language" />
+
+            <TextView
+                android:id="@+id/detail_tv_runtime_label"
+                style="@style/Text.Field.Small"
+                android:layout_below="@id/detail_tv_language_content"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@+id/detail_img_item_photo"
+                android:text="@string/runtime_label" />
+
+            <TextView
+                android:id="@+id/detail_tv_runtime_content"
+                style="@style/Text.Content"
+                android:layout_below="@id/detail_tv_runtime_label"
+                android:layout_toEndOf="@id/detail_img_item_photo"
+                tools:text="Movie Duration" />
+        </RelativeLayout>
+
+        <TextView
+            style="@style/Text.Field.Medium"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:text="@string/genre_label" />
+
+        <TextView
+            android:id="@+id/detail_tv_genre"
+            style="@style/Text.Content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="8dp"
+            tools:text="Movie Genres" />
+
+        <TextView
+            style="@style/Text.Field.Medium"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:text="@string/overview_label" />
+
+        <TextView
+            android:id="@+id/detail_tv_overview"
+            style="@style/Text.Content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            tools:text="Movie Overview" />
+    </LinearLayout>
+</ScrollView>
