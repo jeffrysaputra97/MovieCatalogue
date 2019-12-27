@@ -1,72 +1,69 @@
 package com.ithb.jeffry.moviecatalogue;
 
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
 import java.util.ArrayList;
 
-public class MovieAdapter extends BaseAdapter {
-    private final Context context;
-    private ArrayList<Movie> movies = new ArrayList<>();
+public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> {
+    private OnItemClickCallback onItemClickCallback;
+    private ArrayList<Movie> movies;
 
-    public MovieAdapter(Context context) {
-        this.context = context;
-    }
-
-    public void setMovies(ArrayList<Movie> movies) {
+    MovieAdapter(ArrayList<Movie> movies) {
         this.movies = movies;
     }
 
+    void setOnItemClickCallback(OnItemClickCallback onItemClickCallback) {
+        this.onItemClickCallback = onItemClickCallback;
+    }
+
+    @NonNull
     @Override
-    public int getCount() {
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_movie, parent, false);
+        return new ViewHolder(view);
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull final ViewHolder holder, int position) {
+        Movie movie = movies.get(position);
+
+        holder.imgPhoto.setImageResource(movie.getPhoto());
+        holder.txtTitle.setText(movie.getTitle());
+        holder.txtDescription.setText(movie.getDescription());
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onItemClickCallback.onItemClicked(movies.get(holder.getAdapterPosition()));
+            }
+        });
+    }
+
+    @Override
+    public int getItemCount() {
         return movies.size();
     }
 
-    @Override
-    public Object getItem(int i) {
-        return movies.get(i);
-    }
-
-    @Override
-    public long getItemId(int i) {
-        return i;
-    }
-
-    @Override
-    public View getView(int i, View view, ViewGroup viewGroup) {
-        View itemView = view;
-
-        if (itemView == null) {
-            itemView = LayoutInflater.from(context).inflate(R.layout.item_movie, viewGroup, false);
-        }
-
-        ViewHolder viewHolder = new ViewHolder(itemView);
-        Movie movie = (Movie) getItem(i);
-        viewHolder.bind(movie);
-
-        return itemView;
-    }
-
-    private class ViewHolder {
+    class ViewHolder extends RecyclerView.ViewHolder {
         private ImageView imgPhoto;
         private TextView txtTitle;
         private TextView txtDescription;
 
-        ViewHolder(View view) {
-            imgPhoto = view.findViewById(R.id.img_photo);
-            txtTitle = view.findViewById(R.id.txt_title);
-            txtDescription = view.findViewById(R.id.txt_description);
+        ViewHolder(@NonNull View itemView) {
+            super(itemView);
+            imgPhoto = itemView.findViewById(R.id.img_photo);
+            txtTitle = itemView.findViewById(R.id.txt_title);
+            txtDescription = itemView.findViewById(R.id.txt_description);
         }
+    }
 
-        void bind(Movie movie) {
-            imgPhoto.setImageResource(movie.getPhoto());
-            txtTitle.setText(movie.getTitle());
-            txtDescription.setText(movie.getDescription());
-        }
+    public interface OnItemClickCallback {
+        void onItemClicked(Movie data);
     }
 }

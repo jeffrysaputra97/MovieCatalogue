@@ -13,71 +13,71 @@ class Movie implements Parcelable {
     private String genre;
     private String description;
 
-    public Movie() {
+    Movie() {
     }
 
     //setter and getter hasil generate
-    public int getPhoto() {
+    int getPhoto() {
         return photo;
     }
 
-    public void setPhoto(int photo) {
+    void setPhoto(int photo) {
         this.photo = photo;
     }
 
-    public String getTitle() {
+    String getTitle() {
         return title;
     }
 
-    public void setTitle(String name) {
+    void setTitle(String name) {
         this.title = name;
     }
 
-    public String getYear() {
+    String getYear() {
         return year;
     }
 
-    public void setYear(String year) {
+    void setYear(String year) {
         this.year = year;
     }
 
-    public String getReleaseDate() {
+    String getReleaseDate() {
         return releaseDate;
     }
 
-    public void setReleaseDate(String releaseDate) {
+    void setReleaseDate(String releaseDate) {
         this.releaseDate = releaseDate;
     }
 
-    public String getLanguage() {
+    String getLanguage() {
         return language;
     }
 
-    public void setLanguage(String language) {
+    void setLanguage(String language) {
         this.language = language;
     }
 
-    public String getRuntime() {
+    String getRuntime() {
         return runtime;
     }
 
-    public void setRuntime(String runtime) {
+    void setRuntime(String runtime) {
         this.runtime = runtime;
     }
 
-    public String getGenre() {
+    String getGenre() {
         return genre;
     }
 
-    public void setGenre(String genre) {
+    void setGenre(String genre) {
         this.genre = genre;
     }
 
-    public String getDescription() {
+    String getDescription() {
         return description;
     }
 
-    public void setDescription(String description) {
+    void setDescription(String description) {
         this.description = description;
     }
 
@@ -98,7 +98,7 @@ class Movie implements Parcelable {
         parcel.writeString(genre);
     }
 
-    protected Movie(Parcel in) {
+    private Movie(Parcel in) {
         photo = in.readInt();
         title = in.readString();
         description = in.readString();

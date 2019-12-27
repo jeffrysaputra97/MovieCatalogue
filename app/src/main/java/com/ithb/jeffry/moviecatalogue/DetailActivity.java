@@ -13,7 +13,7 @@ public class DetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
-        setActionBarTitle("Movie Details");
+        setActionBarTitle(getString(R.string.detail_title));
 
         ImageView imgMoviePhoto = findViewById(R.id.detail_img_item_photo);
         TextView tvMovieTitle = findViewById(R.id.detail_tv_movie_title);
