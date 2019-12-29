@@ -1,0 +1,160 @@
+<resources>
+    <string name="app_name">Katalog Film</string>
+    <string name="release_label">Informasi Rilis</string>
+    <string name="language_label">Bahasa</string>
+    <string name="runtime_label">Durasi</string>
+    <string name="genre_label">Genre</string>
+    <string name="overview_label">Sinopsis</string>
+    <string name="img_photo_content_desc">Poster Film</string>
+    <string name="detail_img_item_photo_content_desc">Poster Film</string>
+    <string name="main_title">Daftar Film</string>
+    <string name="detail_title">Detail Film</string>
+    <string name="language_setting">Bahasa</string>
+    <string name="language_btn">Terapkan</string>
+    <string name="language_title">Pengaturan Bahasa</string>
+    <string name="language_message">Pengaturan bahasa diterapkan!</string>
+    <string name="tab_text_1">Film</string>
+    <string name="tab_text_2">Serial Tv</string>
+
+    <string-array name="data_movie_release">
+        <item>23 April 2018</item>
+        <item>20 Agustus 2018</item>
+        <item>21 Desember 2018</item>
+        <item>1 Desember 2018</item>
+        <item>18 Mei 2018</item>
+        <item>5 Juni 2018</item>
+        <item>22 Juni 2018</item>
+        <item>1 Oktober 2018</item>
+        <item>5 November 2018</item>
+        <item>29 Januari 2018</item>
+        <item>30 Oktober 2018</item>
+        <item>27 Juli 2018</item>
+        <item>16 November 2018</item>
+        <item>5 Oktober 2018</item>
+        <item>4 Juli 2018</item>
+    </string-array>
+
+    <string-array name="data_tv_release">
+        <item>10 Oktober 2012</item>
+        <item>15 Februari 2019</item>
+        <item>26 Februari 1986</item>
+        <item>12 Oktober 2009</item>
+        <item>31 Januari 1999</item>
+        <item>7 October 2014</item>
+        <item>17 April 2011</item>
+        <item>22 September 2014</item>
+        <item>27 Maret 2005</item>
+        <item>28 Maret 2019</item>
+    </string-array>
+
+    <string-array name="data_movie_language">
+        <item>Inggris</item>
+        <item>Inggris</item>
+        <item>Inggris</item>
+        <item>Inggris</item>
+        <item>Inggris</item>
+        <item>Inggris</item>
+        <item>Inggris</item>
+        <item>Inggris</item>
+        <item>Inggris</item>
+        <item>Inggris</item>
+        <item>Inggris</item>
+        <item>Inggris</item>
+        <item>Inggris</item>
+        <item>Inggris</item>
+        <item>Inggris</item>
+    </string-array>
+
+    <string-array name="data_tv_language">
+        <item>Inggris</item>
+        <item>Inggris</item>
+        <item>Jepang</item>
+        <item>Jepang</item>
+        <item>Inggris</item>
+        <item>Inggris</item>
+        <item>Inggris</item>
+        <item>Inggris</item>
+        <item>Inggris</item>
+        <item>Inggris</item>
+    </string-array>
+
+    <string-array name="data_movie_runtime">
+        <item>2j 29m</item>
+        <item>1j 16m</item>
+        <item>2j 24m</item>
+        <item>1j 57m</item>
+        <item>2j 1m</item>
+        <item>1j 58m</item>
+        <item>2j 9m</item>
+        <item>1j 52m</item>
+        <item>1j 52m</item>
+        <item>2j 14m</item>
+        <item>2j 15m</item>
+        <item>2j 28m</item>
+        <item>2j 14m</item>
+        <item>2j 16m</item>
+        <item>1j 37m</item>
+    </string-array>
+
+    <string-array name="data_movie_genres">
+        <item>Petualangan, Aksi, Fiksi Ilmiah</item>
+        <item>Petualangan, Aksi, Fiksi Ilmiah</item>
+        <item>Petualangan, Aksi, Fantasi</item>
+        <item>Petualangan, Aksi, Fiksi Ilmiah, Animasi, Komedi</item>
+        <item>Petualangan, Aksi, Komedi</item>
+        <item>Petualangan, Aksi, Komedi, Animasi</item>
+        <item>Petualangan, Aksi, Fiksi Ilmiah</item>
+        <item>Aksi, Fiksi Ilmiah</item>
+        <item>Keluarga, Animasi, Komedi, Petualangan</item>
+        <item>Petualangan, Aksi, Fantasi, Fiksi Ilmiah</item>
+        <item>Drama, Musik</item>
+        <item>Aksi, Petualangan</item>
+        <item>Petualangan, Fantasi, Keluarga</item>
+        <item>Drama, Percintaan, Musik</item>
+        <item>Aksi, Fiksi Ilmiah, Thriller, Horor</item>
+    </string-array>
+
+    <string-array name="data_tv_genres">
+        <item>Kriminal, Drama, Misteri, Aksi, Petualangan</item>
+        <item>Fiksi Ilmiah, Fantasi, Aksi, Petualangan</item>
+        <item>Petualangan, Aksi, Fantasi, Komedi, Fiksi Ilmiah, Animasi</item>
+        <item>Petualangan, Aksi, Fiksi Ilmiah, Fantasi, Animasi, Komedi</item>
+        <item>Animasi, Komedi</item>
+        <item>Drama, Fiksi Ilmiah, Fantasi</item>
+        <item>Drama, Fiksi Ilmiah, Fantasi</item>
+        <item>Drama, Fantasi, Kriminal</item>
+        <item>Drama</item>
+        <item>Petualangan, Aksi, Drama</item>
+    </string-array>
+
+    <string-array name="data_movie_description">
+        <item>Saat Avengers dan sekutu mereka terus melindungi dunia dari ancaman yang terlalu besar untuk ditangani oleh satu pahlawan, bahaya baru telah muncul dari bayang-bayang kosmik: Thanos. Seorang lalim penghinaan intergalaksi, tujuannya adalah untuk mengumpulkan semua enam Batu Infinity, artefak kekuatan yang tak terbayangkan, dan menggunakannya untuk menimbulkan keinginannya yang terpelintir pada semua kenyataan. Segala sesuatu yang Avengers telah perjuangkan telah mengarah ke saat ini - nasib Bumi dan keberadaannya sendiri tidak pernah lebih tidak pasti.</item>
+        <item>Dalam waktu dekat, sebuah kapal penjelajah luar angkasa mendarat di planet yang tidak dikenal. Mereka segera bertemu dengan beberapa ketakutan terburuk mereka ketika mereka menemukan bahwa planet ini dihuni oleh dinosaurus raksasa. </item>
+        <item>Dulunya merupakan rumah bagi peradaban paling maju di Bumi, Atlantis sekarang merupakan kerajaan bawah laut yang diperintah oleh Raja Orm yang haus kekuasaan. Dengan pasukan yang sangat besar, Orm berencana untuk menaklukkan orang-orang samudera yang tersisa dan kemudian ke permukaan dunia. Yang menghalangi jalannya adalah Arthur Curry, setengah manusia setengah manusia, saudara setengah Atlantis dan pewaris sejati takhta.</item>
+        <item>Miles Morales menyulap hidupnya antara menjadi siswa sekolah menengah dan menjadi manusia laba-laba. Saat Wilson "Kingpin" Fisk menggunakan collider super, yang lain dari seluruh Spider-Verse diangkut ke dimensi ini.</item>
+        <item>Deadpool tentara bayaran Wisecracking bertarung melawan Cable jahat dan kuat dan orang jahat lainnya untuk menyelamatkan hidup anak laki-laki.</item>
+        <item>Elastigirl bertindak untuk menyelamatkan hari itu, sementara Tuan Incredible masih menghadapi tantangan terbesarnya - mengurus masalah ketiga anaknya.</item>
+        <item>Tiga tahun setelah jatuhnya Jurassic World, letusan gunung berapi mengancam dinosaurus yang tersisa di isla Nublar, jadi Claire Dearing, mantan manajer taman, merekrut Owen Grady untuk membantu mencegah kepunahan dinosaurus sekali lagi.</item>
+        <item>Wartawan investigasi Eddie Brock mencoba kembali setelah skandal, tetapi secara tidak sengaja menjadi tuan rumah Venom, seorang simbiot alien yang sangat kuat dan sakti. Segera, ia harus mengandalkan kekuatan barunya untuk melindungi dunia dari organisasi bayangan yang mencari simbiosis mereka sendiri.</item>
+        <item>Orang jahat di video game, Ralph dan rekan-rekannya yang tidak sesuai, Vanellope von Schweetz harus menanggung risiko semuanya dengan bepergian ke World Wide Web untuk mencari bagian pengganti untuk menyelamatkan video game Vanellope, "Sugar Rush." Di atas kepala mereka, Ralph dan Vanellope mengandalkan warga internet - netizen - untuk membantu menavigasi jalan mereka, termasuk seorang pengusaha bernama Yesss, yang merupakan algoritma kepala dan jantung dan jiwa dari situs pembuat tren BuzzzTube.</item>
+        <item>Raja T Challa pulang dari Amerika ke negara Afrika Wakanda yang tertutup dan berteknologi maju untuk melayani sebagai pemimpin baru negaranya. Namun, T \'Challa segera menemukan bahwa ia ditantang untuk naik takhta oleh faksi di negaranya sendiri maupun di luar. Menggunakan kekuatan yang disediakan untuk raja-raja Wakandan, T \'Challa mengasumsikan mantel Black Panther untuk bergabung dengan pacar Nakia, ibu-ratu, saudara perempuan-anak kandungnya, anggota Dora Milaje (pasukan khusus \' pasukan Wakandan \') dan Agen rahasia Amerika, untuk mencegah Wakanda terseret ke dalam perang dunia.</item>
+        <item>Penyanyi Freddie Mercury, gitaris Brian May, drummer Roger Taylor dan gitaris John Deacon mengambil dunia musik dengan badai ketika mereka membentuk band rock Queen Rock pada tahun 1970. Lagu-lagu hit menjadi klasik instan. Ketika gaya hidup Mercury yang semakin liar mulai lepas kendali, Queen segera menghadapi tantangan terbesarnya - menemukan cara untuk menjaga band tetap bersama di tengah kesuksesan dan kelebihan.</item>
+        <item>Ketika misi IMF berakhir dengan buruk, dunia dihadapkan pada konsekuensi yang mengerikan. Ketika Ethan Hunt mengambilnya untuk memenuhi pengarahan aslinya, CIA mulai mempertanyakan kesetiaan dan motifnya. Tim IMF menemukan diri mereka berpacu dengan waktu, diburu oleh para pembunuh ketika mencoba mencegah bencana global.</item>
+        <item>Gellert Grindelwald telah lolos dari hukuman penjara dan mulai mengumpulkan pengikut untuk tujuannya — meninggikan para penyihir di atas semua makhluk non-magis. Satu-satunya yang mampu menghentikannya adalah penyihir yang pernah ia sebut teman terdekatnya, Albus Dumbledore. Namun, Dumbledore perlu mencari bantuan dari penyihir yang pernah menggagalkan Grindelwald sebelumnya, mantan muridnya Newt Scamander, yang setuju untuk membantu, tidak menyadari bahaya yang ada di depan. Garis ditarik saat cinta dan kesetiaan diuji, bahkan di antara teman dan keluarga yang paling sejati, di dunia sihir yang semakin terpecah.</item>
+        <item>Musisi kawakan Jackson Maine menemukan - dan jatuh cinta dengan - artis yang sedang berjuang Ally. Dia baru saja menyerah pada mimpinya untuk menjadi besar sebagai penyanyi - sampai Jack membujuknya menjadi sorotan. Tetapi bahkan ketika karir Ally lepas landas, sisi pribadi dari hubungan mereka hancur, ketika Jack berjuang terus-menerus dengan setan internalnya sendiri.</item>
+        <item>Untuk mendorong tingkat kejahatan di bawah satu persen untuk sisa tahun ini, New Founding Fathers of America menguji teori sosiologis yang melampiaskan agresi selama satu malam di satu komunitas yang terisolasi. Tetapi ketika kekerasan para penindas memenuhi kemarahan yang lain, penularannya akan meledak dari perbatasan kota uji coba dan menyebar ke seluruh negara.</item>
+    </string-array>
+
+    <string-array name="data_tv_description">
+        <item>Playboy miliarder manja, Oliver Queen, hilang dan diduga tewas ketika kapal pesiarnya hilang di laut. Dia kembali lima tahun kemudian seorang pria yang berubah, bertekad untuk membersihkan kota sebagai main hakim sendiri bersenjatakan busur.</item>
+        <item>Anggota Patroli Doom masing-masing mengalami kecelakaan mengerikan yang memberi mereka kemampuan manusia super - tetapi juga membuat mereka terluka dan cacat. Trauma dan tertindas, tim menemukan tujuan melalui Ketua, yang menyatukan mereka untuk menyelidiki fenomena aneh yang ada - dan untuk melindungi Bumi dari apa yang mereka temukan.</item>
+        <item>Dahulu kala di pegunungan, seorang master pertempuran yang dikenal sebagai Gohan menemukan seorang bocah aneh yang ia beri nama Goku. Gohan membesarkannya dan melatih Goku dalam seni bela diri sampai dia mati. Bocah muda dan sangat kuat itu sendirian, tetapi mudah dikelola. Kemudian suatu hari, Goku bertemu dengan seorang gadis remaja bernama Bulma, yang pencariannya untuk Bola Naga mistis membawanya ke rumah Goku. Bersama-sama, mereka berangkat untuk menemukan ketujuh dan mengabulkan keinginannya.</item>
+        <item>Lucy adalah seorang gadis berusia 17 tahun, yang ingin menjadi penyihir penuh. Suatu hari ketika mengunjungi Kota Harujion, dia bertemu Natsu, seorang pemuda yang mudah sakit karena segala jenis transportasi. Tapi Natsu bukan sembarang anak biasa, ia adalah anggota dari salah satu serikat penyihir paling terkenal di dunia: Fairy Tail.</item>
+        <item>Seri animasi manis, Freakin, Twisted, salah secara politik dan Freakin menampilkan petualangan keluarga Griffin yang disfungsional. Peter yang kikuk dan Lois yang sudah lama menderita memiliki tiga anak. Stewie (bayi yang cerdas tetapi sadis yang bertekad membunuh ibunya dan mengambil alih dunia), Meg (yang tertua, dan merupakan gadis yang paling tidak populer di kota) dan Chris (anak tengah, dia tidak terlalu cerdas tetapi memiliki gairah untuk film). Anggota terakhir keluarga itu adalah Brian - anjing yang bisa bicara dan lebih dari sekadar hewan peliharaan, ia menjaga Stewie, sementara menghirup Martinis dan memilah-milah masalah hidupnya sendiri.</item>
+        <item>Setelah akselerator partikel menyebabkan badai aneh, Penyelidik CSI Barry Allen disambar petir dan jatuh koma. Beberapa bulan kemudian dia terbangun dengan kekuatan kecepatan super, memberinya kemampuan untuk bergerak melalui Central City seperti malaikat penjaga yang tak terlihat. Meskipun awalnya bersemangat dengan kekuatan barunya, Barry terkejut menemukan bahwa dia bukan satu-satunya "manusia meta" yang diciptakan setelah ledakan akselerator - dan tidak semua orang menggunakan kekuatan baru mereka untuk kebaikan. Barry bermitra dengan S.T.A.R. Lab dan mendedikasikan hidupnya untuk melindungi yang tidak bersalah. Untuk saat ini, hanya beberapa teman dekat dan rekan yang tahu bahwa Barry secara harfiah adalah manusia tercepat yang hidup, tetapi tidak akan lama sebelum dunia mengetahui apa yang menjadi Barry Allen … The Flash.</item>
+        <item>Tujuh keluarga bangsawan berjuang untuk menguasai tanah mitos Westeros. Gesekan antara rumah-rumah mengarah ke perang skala penuh. Semua sementara kejahatan yang sangat kuno terbangun di utara terjauh. Di tengah-tengah perang, perintah militer yang diabaikan, Night\'s Watch, adalah semua yang berdiri di antara ranah manusia dan kengerian es di luarnya.</item>
+        <item>Sebelum ada Batman, ada GOTHAM. Semua orang tahu nama Komisaris Gordon. Dia adalah salah satu musuh terbesar dunia kejahatan, seorang pria yang reputasinya identik dengan hukum dan ketertiban. Tapi apa yang diketahui dari kisah Gordon dan kebangkitannya dari detektif pemula menjadi Komisaris Polisi? Apa yang diperlukan untuk menavigasi berbagai lapisan korupsi yang diam-diam memerintah Kota Gotham, tempat bertelurnya penjahat paling ikonik di dunia? Dan keadaan apa yang menciptakan mereka - persona yang lebih besar dari kehidupan yang akan menjadi Catwoman, The Penguin, The Riddler, Two-Face dan The Joker?</item>
+        <item>Mengikuti kehidupan pribadi dan profesional sekelompok dokter di Rumah Sakit Gray Sloan Memorial di Seattle.</item>
+        <item>Drama yang menegangkan dan menjadi dewasa ini mengikuti perjalanan seorang gadis muda yang luar biasa ketika ia menghindari pengejaran tanpa henti dari seorang agen CIA yang tidak ada buku dan mencoba untuk menggali kebenaran di balik siapa dirinya. Berdasarkan film Joe Wright 2011.</item>
+    </string-array>
+</resources>
