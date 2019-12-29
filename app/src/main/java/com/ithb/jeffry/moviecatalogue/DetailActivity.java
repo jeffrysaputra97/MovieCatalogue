@@ -26,14 +26,16 @@ public class DetailActivity extends AppCompatActivity {
 
         Movie movie = getIntent().getParcelableExtra(EXTRA_MOVIE);
 
-        imgMoviePhoto.setImageResource(movie.getPhoto());
-        tvMovieTitle.setText(movie.getTitle());
-        tvMovieYear.setText(movie.getYear());
-        tvMovieRelease.setText(movie.getReleaseDate());
-        tvMovieLanguage.setText(movie.getLanguage());
-        tvMovieRuntime.setText(movie.getRuntime());
-        tvMovieGenre.setText(movie.getGenre());
-        tvMovieOverview.setText(movie.getDescription());
+        if (movie != null) {
+            imgMoviePhoto.setImageResource(movie.getPhoto());
+            tvMovieTitle.setText(movie.getTitle());
+            tvMovieYear.setText(movie.getYear());
+            tvMovieRelease.setText(movie.getReleaseDate());
+            tvMovieLanguage.setText(movie.getLanguage());
+            tvMovieRuntime.setText(movie.getRuntime());
+            tvMovieGenre.setText(movie.getGenre());
+            tvMovieOverview.setText(movie.getDescription());
+        }
     }
 
     private void setActionBarTitle(String title) {
