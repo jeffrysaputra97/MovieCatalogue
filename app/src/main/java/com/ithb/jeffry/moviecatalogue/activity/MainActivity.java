@@ -1,4 +1,4 @@
-package com.ithb.jeffry.moviecatalogue;
+package com.ithb.jeffry.moviecatalogue.activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,6 +10,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.google.android.material.tabs.TabLayout;
+import com.ithb.jeffry.moviecatalogue.R;
+import com.ithb.jeffry.moviecatalogue.adapter.SectionsPagerAdapter;
 
 public class MainActivity extends AppCompatActivity {
 

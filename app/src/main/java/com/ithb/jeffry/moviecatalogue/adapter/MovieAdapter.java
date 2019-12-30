@@ -1,4 +1,4 @@
-package com.ithb.jeffry.moviecatalogue;
+package com.ithb.jeffry.moviecatalogue.adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,17 +9,20 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.ithb.jeffry.moviecatalogue.R;
+import com.ithb.jeffry.moviecatalogue.model.Movie;
+
 import java.util.ArrayList;
 
 public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> {
     private OnItemClickCallback onItemClickCallback;
     private ArrayList<Movie> movies;
 
-    MovieAdapter(ArrayList<Movie> movies) {
+    public MovieAdapter(ArrayList<Movie> movies) {
         this.movies = movies;
     }
 
-    void setOnItemClickCallback(OnItemClickCallback onItemClickCallback) {
+    public void setOnItemClickCallback(OnItemClickCallback onItemClickCallback) {
         this.onItemClickCallback = onItemClickCallback;
     }
 

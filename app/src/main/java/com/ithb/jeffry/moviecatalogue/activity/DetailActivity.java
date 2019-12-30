@@ -1,10 +1,13 @@
-package com.ithb.jeffry.moviecatalogue;
+package com.ithb.jeffry.moviecatalogue.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.ithb.jeffry.moviecatalogue.model.Movie;
+import com.ithb.jeffry.moviecatalogue.R;
 
 public class DetailActivity extends AppCompatActivity {
     public static final String EXTRA_MOVIE = "extra_movie";

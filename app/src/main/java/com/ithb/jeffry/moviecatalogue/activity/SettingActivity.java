@@ -1,4 +1,4 @@
-package com.ithb.jeffry.moviecatalogue;
+package com.ithb.jeffry.moviecatalogue.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,6 +11,8 @@ import android.util.DisplayMetrics;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
+
+import com.ithb.jeffry.moviecatalogue.R;
 
 import java.util.Locale;
 

@@ -1,4 +1,4 @@
-package com.ithb.jeffry.moviecatalogue;
+package com.ithb.jeffry.moviecatalogue.adapter;
 
 import android.content.Context;
 
@@ -9,10 +9,13 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
+import com.ithb.jeffry.moviecatalogue.fragment.MovieFragment;
+import com.ithb.jeffry.moviecatalogue.R;
+
 public class SectionsPagerAdapter extends FragmentPagerAdapter {
     private final Context mContext;
 
-    SectionsPagerAdapter(@NonNull FragmentManager fm, Context mContext) {
+    public SectionsPagerAdapter(@NonNull FragmentManager fm, Context mContext) {
         super(fm, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
         this.mContext = mContext;
     }

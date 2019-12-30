@@ -1,4 +1,4 @@
-package com.ithb.jeffry.moviecatalogue;
+package com.ithb.jeffry.moviecatalogue.fragment;
 
 import android.content.Intent;
 import android.content.res.TypedArray;
@@ -14,6 +14,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.ithb.jeffry.moviecatalogue.R;
+import com.ithb.jeffry.moviecatalogue.activity.DetailActivity;
+import com.ithb.jeffry.moviecatalogue.adapter.MovieAdapter;
+import com.ithb.jeffry.moviecatalogue.model.Movie;
+
 import java.util.ArrayList;
 
 public class MovieFragment extends Fragment{
@@ -25,7 +30,7 @@ public class MovieFragment extends Fragment{
         // Required empty public constructor
     }
 
-    static MovieFragment newInstance(int index) {
+    public static MovieFragment newInstance(int index) {
         MovieFragment fragment = new MovieFragment();
         Bundle bundle = new Bundle();
         bundle.putInt(ARG_SECTION_NUMBER, index);

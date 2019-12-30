@@ -1,9 +1,9 @@
-package com.ithb.jeffry.moviecatalogue;
+package com.ithb.jeffry.moviecatalogue.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;
 
-class Movie implements Parcelable {
+public class Movie implements Parcelable {
     private int photo;
     private String title;
     private String year;
@@ -13,71 +13,71 @@ class Movie implements Parcelable {
     private String genre;
     private String description;
 
-    Movie() {
+    public Movie() {
     }
 
     //setter and getter hasil generate
-    int getPhoto() {
+    public int getPhoto() {
         return photo;
     }
 
-    void setPhoto(int photo) {
+    public void setPhoto(int photo) {
         this.photo = photo;
     }
 
-    String getTitle() {
+    public String getTitle() {
         return title;
     }
 
-    void setTitle(String name) {
+    public void setTitle(String name) {
         this.title = name;
     }
 
-    String getYear() {
+    public String getYear() {
         return year;
     }
 
-    void setYear(String year) {
+    public void setYear(String year) {
         this.year = year;
     }
 
-    String getReleaseDate() {
+    public String getReleaseDate() {
         return releaseDate;
     }
 
-    void setReleaseDate(String releaseDate) {
+    public void setReleaseDate(String releaseDate) {
         this.releaseDate = releaseDate;
     }
 
-    String getLanguage() {
+    public String getLanguage() {
         return language;
     }
 
-    void setLanguage(String language) {
+    public void setLanguage(String language) {
         this.language = language;
     }
 
-    String getRuntime() {
+    public String getRuntime() {
         return runtime;
     }
 
-    void setRuntime(String runtime) {
+    public void setRuntime(String runtime) {
         this.runtime = runtime;
     }
 
-    String getGenre() {
+    public String getGenre() {
         return genre;
     }
 
-    void setGenre(String genre) {
+    public void setGenre(String genre) {
         this.genre = genre;
     }
 
-    String getDescription() {
+    public String getDescription() {
         return description;
     }
 
-    void setDescription(String description) {
+    public void setDescription(String description) {
         this.description = description;
     }
 
