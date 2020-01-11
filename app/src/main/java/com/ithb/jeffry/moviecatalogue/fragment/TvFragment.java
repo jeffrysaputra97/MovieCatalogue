@@ -1,5 +1,6 @@
 package com.ithb.jeffry.moviecatalogue.fragment;
 
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -23,19 +24,19 @@ import com.ithb.jeffry.moviecatalogue.activity.DetailActivity;
 import com.ithb.jeffry.moviecatalogue.adapter.MovieAdapter;
 import com.ithb.jeffry.moviecatalogue.model.Movie;
 import com.ithb.jeffry.moviecatalogue.model.StateData;
-import com.ithb.jeffry.moviecatalogue.viewmodel.MovieViewModel;
+import com.ithb.jeffry.moviecatalogue.viewmodel.TvViewModel;
 
 import java.util.ArrayList;
 import java.util.Objects;
 
-public class MovieFragment extends Fragment{
+public class TvFragment extends Fragment {
     private MovieAdapter movieAdapter;
     private ProgressBar progressBar;
     private ConstraintLayout errorLayout;
     private ImageView errorImage;
     private TextView errorMessage;
 
-    public MovieFragment() {
+    public TvFragment() {
         // Required empty public constructor
     }
 
@@ -43,7 +44,7 @@ public class MovieFragment extends Fragment{
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_movie, container, false);
+        return inflater.inflate(R.layout.fragment_tv, container, false);
     }
 
     @Override
@@ -54,34 +55,34 @@ public class MovieFragment extends Fragment{
         errorImage = view.findViewById(R.id.error_image);
         errorMessage = view.findViewById(R.id.error_message);
 
-        progressBar = view.findViewById(R.id.movie_progressBar);
+        progressBar = view.findViewById(R.id.tv_progressBar);
 
-        RecyclerView rvMovie  = view.findViewById(R.id.rv_movie);
-        rvMovie.setHasFixedSize(true);
-        rvMovie.setLayoutManager(new LinearLayoutManager(getActivity()));
+        RecyclerView rvTv = view.findViewById(R.id.rv_tv);
+        rvTv.setHasFixedSize(true);
+        rvTv.setLayoutManager(new LinearLayoutManager(getActivity()));
         movieAdapter = new MovieAdapter();
         movieAdapter.notifyDataSetChanged();
-        rvMovie.setAdapter(movieAdapter);
-        MovieViewModel movieViewModel = new ViewModelProvider(this, new ViewModelProvider.NewInstanceFactory()).get(MovieViewModel.class);
+        rvTv.setAdapter(movieAdapter);
+        TvViewModel tvViewModel = new ViewModelProvider(this, new ViewModelProvider.NewInstanceFactory()).get(TvViewModel.class);
 
-        loadData(movieViewModel);
+        loadData(tvViewModel);
     }
 
-    private void loadData(MovieViewModel movieViewModel) {
-        movieViewModel.setListMovies();
+    private void loadData(TvViewModel tvViewModel) {
+        tvViewModel.setListTvs();
         showLoading(true);
 
-        movieViewModel.getListMovies().observe(getViewLifecycleOwner(), new Observer<StateData<ArrayList<Movie>>>() {
+        tvViewModel.getListTvs().observe(getViewLifecycleOwner(), new Observer<StateData<ArrayList<Movie>>>() {
             @Override
-            public void onChanged(StateData<ArrayList<Movie>> movieList) {
-                switch (movieList.getStatus()) {
+            public void onChanged(StateData<ArrayList<Movie>> tvList) {
+                switch (tvList.getStatus()) {
                     case SUCCESS:
-                        movieAdapter.setData(movieList.getData());
+                        movieAdapter.setData(tvList.getData());
 
                         movieAdapter.setOnItemClickCallback(new MovieAdapter.OnItemClickCallback() {
                             @Override
                             public void onItemClicked(Movie data) {
-                                showSelectedMovie(data);
+                                showSelectedTv(data);
                             }
                         });
 
@@ -100,7 +101,7 @@ public class MovieFragment extends Fragment{
         });
     }
 
-    private void showSelectedMovie(Movie movie) {
+    private void showSelectedTv(Movie movie) {
         Intent movieDetailIntent = new Intent(Objects.requireNonNull(getView()).getContext(), DetailActivity.class);
         movieDetailIntent.putExtra(DetailActivity.EXTRA_MOVIE, movie);
         startActivity(movieDetailIntent);

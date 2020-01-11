@@ -1,13 +1,15 @@
 package com.ithb.jeffry.moviecatalogue.activity;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.ithb.jeffry.moviecatalogue.model.Movie;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 import com.ithb.jeffry.moviecatalogue.R;
+import com.ithb.jeffry.moviecatalogue.model.Movie;
 
 public class DetailActivity extends AppCompatActivity {
     public static final String EXTRA_MOVIE = "extra_movie";
@@ -30,7 +32,11 @@ public class DetailActivity extends AppCompatActivity {
         Movie movie = getIntent().getParcelableExtra(EXTRA_MOVIE);
 
         if (movie != null) {
-            imgMoviePhoto.setImageResource(movie.getPhoto());
+            Glide.with(this)
+                    .load(movie.getPhoto())
+                    .apply(new RequestOptions().override(150, 220))
+                    .into(imgMoviePhoto);
+
             tvMovieTitle.setText(movie.getTitle());
             tvMovieYear.setText(movie.getYear());
             tvMovieRelease.setText(movie.getReleaseDate());

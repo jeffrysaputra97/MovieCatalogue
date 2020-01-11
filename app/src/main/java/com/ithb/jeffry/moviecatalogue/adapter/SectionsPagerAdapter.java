@@ -9,8 +9,9 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.ithb.jeffry.moviecatalogue.fragment.MovieFragment;
 import com.ithb.jeffry.moviecatalogue.R;
+import com.ithb.jeffry.moviecatalogue.fragment.MovieFragment;
+import com.ithb.jeffry.moviecatalogue.fragment.TvFragment;
 
 public class SectionsPagerAdapter extends FragmentPagerAdapter {
     private final Context mContext;
@@ -29,7 +30,19 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
     @NonNull
     @Override
     public Fragment getItem(int position) {
-        return MovieFragment.newInstance(position + 1);
+        Fragment fragment = null;
+
+        switch (position) {
+            case 0:
+                fragment = new MovieFragment();
+                break;
+
+            case 1:
+                fragment = new TvFragment();
+                break;
+        }
+
+        return fragment;
     }
 
     @Nullable

@@ -4,7 +4,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 public class Movie implements Parcelable {
-    private int photo;
+    private String photo;
     private String title;
     private String year;
     private String releaseDate;
@@ -17,11 +17,11 @@ public class Movie implements Parcelable {
     }
 
     //setter and getter hasil generate
-    public int getPhoto() {
+    public String getPhoto() {
         return photo;
     }
 
-    public void setPhoto(int photo) {
+    public void setPhoto(String photo) {
         this.photo = photo;
     }
 
@@ -88,7 +88,7 @@ public class Movie implements Parcelable {
 
     @Override
     public void writeToParcel(Parcel parcel, int i) {
-        parcel.writeInt(photo);
+        parcel.writeString(photo);
         parcel.writeString(title);
         parcel.writeString(description);
         parcel.writeString(year);
@@ -99,7 +99,7 @@ public class Movie implements Parcelable {
     }
 
     private Movie(Parcel in) {
-        photo = in.readInt();
+        photo = in.readString();
         title = in.readString();
         description = in.readString();
         year = in.readString();
